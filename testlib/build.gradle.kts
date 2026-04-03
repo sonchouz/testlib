@@ -52,7 +52,7 @@ afterEvaluate {
 
                 groupId = "com.github.sonchouz"
                 artifactId = "testlib"
-                version = "1.2"
+                version = "1.3"
             }
         }
     }
