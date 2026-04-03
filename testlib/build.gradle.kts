@@ -1,13 +1,13 @@
 plugins {
     alias(libs.plugins.android.library)
     id("maven-publish")
+    id("org.jetbrains.kotlin.plugin.compose")
 }
 
 android {
     namespace = "com.example.testlib"
-    compileSdk {
-        version = release(36)
-    }
+    compileSdk = 36
+
 
     defaultConfig {
         minSdk = 34
@@ -52,7 +52,7 @@ afterEvaluate {
 
                 groupId = "com.github.sonchouz"
                 artifactId = "testlib"
-                version = "1.1"
+                version = "1.2"
             }
         }
     }
